@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calibre Metadata Preview (Sample)</title>
+<style>
+  body {
+    background: #FAF8F5;
+    color: #1F1F1F;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 24px 60px;
+  }
+  h1 { font-size: 24px; margin-bottom: 8px; }
+  h2 { font-size: 19px; margin-top: 36px; border-bottom: 2px solid #D8D2C8; padding-bottom: 6px; }
+  .banner {
+    background: #FFF3CD;
+    border-left: 6px solid #C98A00;
+    padding: 14px 18px;
+    margin: 16px 0 24px;
+    font-weight: bold;
+  }
+  .summary { margin-bottom: 20px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  th {
+    background: #E8E2D8;
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 2px solid #C5BEB2;
+    position: sticky;
+    top: 0;
+  }
+  td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #E2DDD4;
+    vertical-align: top;
+    text-align: left;
+  }
+  tr:nth-child(even) td { background: #F2EFE9; }
+  td.num { width: 48px; color: #666; }
+  td.title { font-weight: bold; width: 42%; }
+  td.author { width: 24%; }
+  td.tags { width: 30%; }
+  .muted { color: #666; }
+</style>
+</head>
+<body>
+  <h1>Calibre Library Preview</h1>
+  <div class="banner">PREVIEW ONLY — nothing has been changed yet. Check this list, then go back to the black window and press Y to apply or N to cancel.</div>
+  <div class="summary">
+    <strong>Books matched:</strong> 6 &nbsp;|&nbsp;
+    <strong>Will change:</strong> 6 &nbsp;|&nbsp;
+    <strong>Duplicates:</strong> 0 &nbsp;|&nbsp;
+    <strong>Not found:</strong> 0 &nbsp;|&nbsp;
+    <strong>CSV:</strong> sample_books.csv
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title (with Series)</th>
+        <th>Author</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="num">1</td><td class="title">Pride and Prejudice</td><td class="author">Jane Austen</td><td class="tags">Classics; Fiction; Romance</td></tr>
+      <tr><td class="num">2</td><td class="title">The Adventures of Tom Sawyer (Tom Sawyer #1)</td><td class="author">Mark Twain</td><td class="tags">Classics; Fiction; Adventure</td></tr>
+      <tr><td class="num">3</td><td class="title">The Fellowship of the Ring (The Lord of the Rings #1)</td><td class="author">J.R.R. Tolkien</td><td class="tags">Fantasy; Epic Fantasy; Adventure</td></tr>
+      <tr><td class="num">4</td><td class="title">Good Omens</td><td class="author">Terry Pratchett; Neil Gaiman</td><td class="tags">Fantasy; Humour; Fiction</td></tr>
+      <tr><td class="num">5</td><td class="title">84, Charing Cross Road</td><td class="author">Helene Hanff</td><td class="tags">Non-Fiction; Memoir; Letters; Books</td></tr>
+      <tr><td class="num">6</td><td class="title">The Origin of Species</td><td class="author">Charles Darwin</td><td class="tags">Non-Fiction; Science; History; Classics</td></tr>
+    </tbody>
+  </table>
+  <h2>Duplicates (same title and author)</h2><p class="muted">None.</p>
+  <h2>Still need checking (Unknown author or unclear title)</h2><p class="muted">None.</p>
+  <h2>CSV rows not found in your Calibre library</h2><p class="muted">None.</p>
+</body>
+</html>

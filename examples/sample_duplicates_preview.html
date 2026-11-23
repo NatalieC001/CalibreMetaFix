@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calibre Duplicates Preview (Sample)</title>
+<style>
+  body {
+    background: #FAF8F5;
+    color: #1F1F1F;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 24px 60px;
+  }
+  h1 { font-size: 24px; margin-bottom: 8px; }
+  .banner {
+    background: #FFF3CD;
+    border-left: 6px solid #C98A00;
+    padding: 14px 18px;
+    margin: 16px 0 24px;
+    font-weight: bold;
+  }
+  .summary { margin-bottom: 20px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  th {
+    background: #E8E2D8;
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 2px solid #C5BEB2;
+    position: sticky;
+    top: 0;
+  }
+  td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #E2DDD4;
+    vertical-align: top;
+    text-align: left;
+  }
+  tr:nth-child(even) td { background: #F2EFE9; }
+  td.num { width: 42px; color: #666; }
+  td.title { font-weight: bold; width: 34%; }
+  td.author { width: 20%; }
+  td.action { width: 42%; }
+  .keep { color: #1B5E20; margin-bottom: 4px; }
+  .merge { color: #0D47A1; margin-bottom: 4px; }
+  .del { color: #9A1B1B; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+  <h1>Calibre Duplicates Preview</h1>
+  <div class="banner">PREVIEW ONLY — nothing has been deleted yet. Check this list, then go back to the black window and press Y to apply or N to cancel.</div>
+  <div class="summary">
+    <strong>Duplicate groups found:</strong> 2 &nbsp;|&nbsp;
+    <strong>Formats to merge:</strong> 1 &nbsp;|&nbsp;
+    <strong>Duplicate copies to remove:</strong> 2
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title (with Series)</th>
+        <th>Author</th>
+        <th>What will happen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num">1</td>
+        <td class="title">Pride and Prejudice</td>
+        <td class="author">Jane Austen</td>
+        <td class="action">
+          <div class="keep"><strong>KEEP:</strong> book #1 [EPUB, PDF] (5 stars)</div>
+          <div class="merge"><strong>MERGE FORMAT:</strong> copy [PDF] from book #42 so nothing is lost</div>
+          <div class="del"><strong>DELETE:</strong> book #42 [PDF]</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="num">2</td>
+        <td class="title">The Origin of Species</td>
+        <td class="author">Charles Darwin</td>
+        <td class="action">
+          <div class="keep"><strong>KEEP:</strong> book #18 [EPUB]</div>
+          <div class="del"><strong>DELETE:</strong> book #12 [no files (broken)]</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
